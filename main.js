@@ -3,14 +3,15 @@ const api = {
     baseurl: "http://api.openweathermap.org/data/2.5/"
 }
 
-const searchbox = document.querySelector('.search-box');
-searchbox.addEventListener('keypress',setQuery);
+/*const searchbox = document.querySelector('.search-box');
+searchbox.addEventListener('keypress',setQuery);*/
+const searchbox = document.querySelector('.search-box')
 
-function setQuery(evt){
-    if(evt.keyCode==13){
+function setQuery(){
+    
         getResults(searchbox.value);
         
-    }
+    
 }
 
 function getResults(query){
